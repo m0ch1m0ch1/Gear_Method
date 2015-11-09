@@ -4,13 +4,12 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-
+#include "common.h"
 /* --------------------------- File open function -------------------------- */
 
 void File_open(){
 
   int count=0;
-  char filename[2][50];
   extern FILE *infile;
   extern FILE *outfile;
 

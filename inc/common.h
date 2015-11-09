@@ -24,6 +24,7 @@ extern int *Malloc_int(int);
 extern double *Malloc_double(int);
 extern double **Malloc_double2(int,int);
 extern char **Malloc_char(int);
+extern void Graph();
 extern void Free();
 
 extern void Time_start();
@@ -34,6 +35,7 @@ extern void Time_stop();
 /* For file.c */
 extern FILE *infile;
 extern FILE *outfile;
+extern char filename[2][50];
 
 /* For read.c */
 extern int number_x;

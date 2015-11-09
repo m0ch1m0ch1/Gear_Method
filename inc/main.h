@@ -19,6 +19,7 @@ int *Malloc_int(int);
 double *Malloc_double(int);
 double **Malloc_double2(int,int);
 char **Malloc_char(int);
+void Graph();
 void Free();
 
 void Time_start();
@@ -29,6 +30,7 @@ void Time_stop();
 /* For file.c */
 FILE *infile;
 FILE *outfile;
+char filename[2][50];
 
 /* For read.c */
 int number_x;
