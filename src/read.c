@@ -69,13 +69,19 @@ void Read_data(){
   // テーブルの見出しの作成
 
   for( i = 0 ; i < number_x ; i++){
-    fprintf(outfile,"%s\t",name_x[i]);
+    fprintf(outfile,"%12s",name_x[i]);
+    if (i != ( number_x - 1 )){
+      fprintf(outfile,", ");
+    }
   }
   fprintf(outfile,"\n");
 
   //初期値の出力
   for( i = 0 ; i < number_x ; i++){
-    fprintf(outfile,"%E\t",value_x[i]);
+    fprintf(outfile,"%E",value_x[i]);
+    if (i != ( number_x - 1 )){
+      fprintf(outfile,", ");
+    }
   }
 
   fprintf(outfile,"\n");
