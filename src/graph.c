@@ -9,6 +9,7 @@ void Graph(){
 
   gp = popen("gnuplot", "w");
   fprintf(gp, "set term jpeg size 1350, 900\n");
+  fprintf(gp, "set datafile separator \",\"\n");
 
   sscanf(filename[1],"%[^.]]",buffer);
 
