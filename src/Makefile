@@ -1,4 +1,4 @@
-COMPILER = gcc -O3
+COMPILER = icc -O3
 CFLAGS   = -MMD -MP -Wall
 LDFLAGS  =
 LIBS     =
