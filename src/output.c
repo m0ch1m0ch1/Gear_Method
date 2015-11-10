@@ -57,7 +57,11 @@ void Output_result(){
       ytemp[i] = 0.0;
 	  }
 
-    fprintf(outfile,"%E\t",ytemp[i]);
+    fprintf(outfile,"%E",ytemp[i]);
+
+    if (i != ( number_x - 1 )){
+      fprintf(outfile,", ");
+    }
   }
 
   fprintf(outfile,"\n");

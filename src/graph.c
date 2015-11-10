@@ -7,20 +7,35 @@ void Graph(){
   char buffer[256];
   int i;
 
+  fclose(outfile);
+  sleep(1);
+
   gp = popen("gnuplot", "w");
-  fprintf(gp, "set term jpeg size 1350, 900\n");
+  if (gp == NULL){ return;}
 
-  sscanf(filename[1],"%[^.]]",buffer);
+  fprintf(gp, "set term png\n");
+  fprintf(gp, "set datafile separator \",\"\n");
 
-  fprintf(gp, "set output \"./%s.jpeg\"\n",buffer);
+  fprintf(gp, "set output \"./output/all.png\"\n");
   fprintf(gp, "plot");
 
   for( i = 1 ; i < number_x ; i++){
-    fprintf(gp, "\"./%s\" using 1:%d title \"%s\" with l",filename[1], i+1, name_x[i]);
-    if (i != (number_x-1)){fprintf(gp,",");}
+
+    fprintf(gp, "\"./output/output.csv\" using 1:%d title \"%s\" w lp", i+1, name_x[i]);
+    if (i != ( number_x - 1 )){
+      fprintf(gp,",\\");
+    }
+    fprintf(gp,"\n");
+
   }
 
-  fprintf(gp,"\n");
+  for( i = 1 ; i < number_x ; i++){
+    fprintf(gp, "set output \"./output/%s.png\"\n", name_x[i]);
+
+    fprintf(gp, "plot \"./output/output.csv\" using 1:%d title \"%s\" w lp\n", i+1, name_x[i]);
+
+  }
+
   fflush(gp);
   pclose(gp);
 
