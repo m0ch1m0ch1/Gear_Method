@@ -4,14 +4,17 @@
 void Graph(){
 
   FILE *gp;
-
+  char buffer[256];
   int i;
 
   gp = popen("gnuplot", "w");
   fprintf(gp, "set term jpeg\n");
   fprintf(gp, "set autoscale x\n");
   fprintf(gp, "set autoscale y\n");
-  fprintf(gp, "set output \"./%s.jpeg\"\n",filename[1]);
+
+  sscanf(filename[1],"%[^.]]",buffer);
+
+  fprintf(gp, "set output \"./%s.jpeg\"\n",buffer);
   fprintf(gp, "plot");
 
   for( i = 1 ; i < number_x ; i++){

@@ -64,4 +64,5 @@ void Output_result(){
   output_count++;
 
   next_time += output_step;
+
 }

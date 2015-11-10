@@ -20,7 +20,6 @@ int *Malloc_int(int number){
   }
 }
 
-
 /* ------- Allocation of memory for single dimention double variable ------- */
 
 double *Malloc_double(int number){
@@ -34,7 +33,6 @@ double *Malloc_double(int number){
     return(tmp);
   }
 }
-
 
 /* -------- Allocation of memory for two dimentions double variable -------- */
 
@@ -58,7 +56,6 @@ double **Malloc_double2(int number1, int number2){
   }
 }
 
-
 /* --------- Allocation of memory for two dimentions char variable --------- */
 
 char **Malloc_char(int number){
@@ -80,7 +77,6 @@ char **Malloc_char(int number){
     return(tmp);
   }
 }
-
 
 /* ------------------- Release of memory for all variable ------------------ */
 
