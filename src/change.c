@@ -21,7 +21,7 @@ void Change(){
     printf("   Change No.%d, time  : %15.7f\n",change_element[tmp],value_x[0]);
     printf("                 value : %15.7E\n",change_value[tmp]);
     tmp++;
-  }while((int) (change_time[tmp] * 1.0E+10) == (int) ( change_time[change_count] * 1.0E+10));
+  }while(change_time[tmp] == change_time[change_count]);
 
   for(i=0;i<number_x;i++){
     fprintf(outfile,"%E\t",value_x[i]);
