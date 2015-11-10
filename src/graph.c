@@ -8,6 +8,8 @@ void Graph(){
   int i;
 
   gp = popen("gnuplot", "w");
+  fclose(outfile);
+  sleep(1);
 
   if (gp == NULL){ return;}
 
