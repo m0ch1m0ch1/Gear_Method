@@ -85,8 +85,6 @@ void Free(){
   extern FILE *outfile;
   extern FILE *logfile;
 
-  fclose(outfile);
-
   free(name_x);
   free(value_x);
   free(name_k);
