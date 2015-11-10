@@ -1,5 +1,5 @@
 COMPILER = gcc -O3
-CFLAGS   = -MMD -MP -Wall -Wextra -Winit-self -Wno-unused-parameter -Wfloat-equal
+CFLAGS   = -MMD -MP -Wall
 LDFLAGS  =
 LIBS     =
 INCLUDE  = -I../inc
