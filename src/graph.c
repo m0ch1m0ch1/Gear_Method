@@ -8,6 +8,9 @@ void Graph(){
   int i;
 
   gp = popen("gnuplot", "w");
+
+  if (gp == NULL){ return;}
+
   fprintf(gp, "set term jpeg size 1350, 900\n");
   fprintf(gp, "set datafile separator \",\"\n");
 
