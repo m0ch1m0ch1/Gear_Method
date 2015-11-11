@@ -32,7 +32,7 @@ void Graph(){
   for( i = 1 ; i < number_x ; i++){
     fprintf(gp, "set output \"./%s.png\"\n", name_x[i]);
 
-    fprintf(gp, "plot \"./output.csv\" using 1:%d title \"%s\" w lp\n", i+1, name_x[i]);
+    fprintf(gp, "plot \"./output.csv\" using 1:%d title \"%s\" w l lw 3\n", i+1, name_x[i]);
 
   }
 
