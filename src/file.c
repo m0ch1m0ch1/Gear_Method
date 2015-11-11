@@ -10,7 +10,7 @@
 void File_open(){
 
   int count=0;
-  char buffer[256];
+  //char buffer[256];
   extern FILE *infile;
   extern FILE *outfile;
 
@@ -36,9 +36,9 @@ void File_open(){
   //scanf("%s",filename[1]);
   //outfile = fopen(filename[1],"w");
 
-  strcpy(buffer, "./output/");
+  //strcpy(buffer, "./output/");
   strcpy(filename[1], "output.csv");
-  strcat(buffer, filename[1]);
-  outfile = fopen(buffer,"w");
+  //strcat(buffer, filename[1]);
+  outfile = fopen(filename[1],"w");
 
 }
