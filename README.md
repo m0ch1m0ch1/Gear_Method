@@ -36,7 +36,7 @@
       Sample1/
         diff.c            サンプルの計算に用いる微分方程式の記述部分
         sample.in         サンプルの入力ファイル
-      Sample2
+      Sample2/
         diff.c            サンプルの計算に用いる微分方程式の記述部分
         sample.in         サンプルの入力ファイル      
 

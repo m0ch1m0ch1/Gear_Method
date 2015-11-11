@@ -9,8 +9,7 @@
 
 void File_open(){
 
-  int count=0;
-  //char buffer[256];
+  int count = 0;
   extern FILE *infile;
   extern FILE *outfile;
 
@@ -23,7 +22,7 @@ void File_open(){
       count++;
 
       if (count == 5){
-	       printf("\n Exit program!!\n");
+	      printf("\n Exit program!!\n");
 	      exit(1);
 	    }
     }else{
@@ -31,14 +30,6 @@ void File_open(){
 	  }
   }
 
-
-  //printf("\n Output data filename ---> ");
-  //scanf("%s",filename[1]);
-  //outfile = fopen(filename[1],"w");
-
-  //strcpy(buffer, "./output/");
   strcpy(filename[1], "output.csv");
-  //strcat(buffer, filename[1]);
   outfile = fopen(filename[1],"w");
-
 }
