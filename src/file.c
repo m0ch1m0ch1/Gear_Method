@@ -15,7 +15,7 @@ void File_open(){
   extern FILE *outfile;
 
   while(1){
-    printf("\n Input  data filename ---> ");
+    printf("\n Input data filename ---> ");
     scanf("%s",filename[0]);
 
     if ((infile = fopen(filename[0],"r")) == NULL){

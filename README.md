@@ -2,7 +2,7 @@
 
 ## 1. はじめに
 
-    このプログラムは、Gear 法(*)と呼ばれる手法を用いて微分方程式の
+    このプログラムは、Gear法(*)と呼ばれる手法を用いて微分方程式の
     数値解法を行なうプログラムである。
     各ファイルの内容は以下の通りである。
 
@@ -32,7 +32,15 @@
       sample.in           サンプルの入力ファイル
       GearMethod          実行ファイル
 
-    (*) Gear, C. W. (1971).
+    ./Sample/
+      Sample1/
+        diff.c            サンプルの計算に用いる微分方程式の記述部分
+        sample.in         サンプルの入力ファイル
+      Sample2
+        diff.c            サンプルの計算に用いる微分方程式の記述部分
+        sample.in         サンプルの入力ファイル      
+
+      (*) Gear, C. W. (1971).
         Numerical Initial Value Problems in Ordinary Differential Equations
         (Prentice-Hall, Inc. Englewood Cliffs, New Jersey)
 
@@ -44,7 +52,7 @@
                  E + S <===> ES1 <===> ES2 ===> E + P
                         k-1       k-2
 
-      (sample.c の微分方程式部分のみ抜粋)
+      (diff.c の微分方程式部分のみ抜粋)
         df[0] = 1.0;
         df[1] = k[1]*x[3] + k[4]*x[4] - k[0]*x[1]*x[2];
         df[2] = k[1]*x[3] - k[0]*x[1]*x[2];
@@ -121,11 +129,11 @@
 ## 4. 使用法
 
     解きたい系の微分方程式を記述し、それに対応した入力ファイルを作成する。
-    (微分方程式のファイル名が diff.c 以外の場合は Makefile を修正する)
+    微分方程式のファイルを編集した場合はsrcフォルダでmakeを実行する。
 
-    GEAR を実行すると、
+    binフォルダ内のGearMethodを実行すると、
 
-        Input  data filename --->
+        Input data filename --->
 
     と出力されるので、作成した入力ファイルのファイル名を入力する。
     すると、反応種の名前と初期濃度、速度定数の名前と値、
