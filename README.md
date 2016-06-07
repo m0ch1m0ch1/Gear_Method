@@ -4,6 +4,11 @@
 
     このプログラムは、Gear法(*)と呼ばれる手法を用いて微分方程式の
     数値解法を行なうプログラムである。
+
+    事前導入ソフトを以下に示す。
+      ・Intel Compiler Version 16.0.2 (gcc version 4.9.0 compatibility)
+      ・Gnuplot Version 5.0 patchlevel 1      
+
     各ファイルの内容は以下の通りである。
 
     ./
