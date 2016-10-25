@@ -4,7 +4,6 @@
 void Graph(){
 
   FILE *gp;
-  char buffer[256];
   int i;
 
   fclose(outfile);
