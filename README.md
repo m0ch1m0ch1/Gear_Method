@@ -1,4 +1,4 @@
-# GEAR: Numerical solution of differential equation by Gear's method
+# gear-method
 
 ## 1. はじめに
 
