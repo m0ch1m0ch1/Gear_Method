@@ -1,5 +1,5 @@
 /*
- time.c : Fuction for measure time
+  time.c : Fuction for measure time
 */
 
 #include <stdio.h>

@@ -1,5 +1,5 @@
 /*
- read.c : Function for read initial data
+  read.c : Function for read initial data
 */
 
 #include "common.h"
@@ -54,9 +54,9 @@ void Read_data(){
 
     //変化させる回数分の値を確保
     for( i = 0 ; i < number_change ; i++){
-	     fscanf(infile,"%lf%d%lf",&change_time[i],&change_element[i],
+      fscanf(infile,"%lf%d%lf",&change_time[i],&change_element[i],
         &change_value[i]);
-	  }
+    }
   }
 
   // 計算条件の取得

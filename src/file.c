@@ -1,5 +1,5 @@
 /*
- file.c : Function for file open
+  file.c : Function for file open
 */
 
 #include <stdio.h>
@@ -22,12 +22,12 @@ void File_open(){
       count++;
 
       if (count == 5){
-	      printf("\n Exit program!!\n");
-	      exit(1);
-	    }
+        printf("\n Exit program!!\n");
+        exit(1);
+      }
     }else{
       break;
-	  }
+    }
   }
 
   strcpy(filename[1], "output.csv");

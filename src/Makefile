@@ -1,9 +1,9 @@
-COMPILER = icc -O3
+COMPILER = gcc -O3
 CFLAGS   = -MMD -MP -Wall
 LDFLAGS  =
-LIBS     =
+LIBS     = -lm
 INCLUDE  = -I../inc
-TARGET   = ../bin/GearMethod
+TARGET   = ../bin/gear
 OBJDIR   = ../obj
 SOURCES  = $(wildcard *.c)
 OBJECTS  = $(addprefix $(OBJDIR)/, $(SOURCES:.c=.o))

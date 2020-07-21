@@ -1,5 +1,5 @@
 /*
- integration.c : Function for numerical integration
+  integration.c : Function for numerical integration
 */
 
 #include "common.h"
@@ -14,11 +14,11 @@ void Numerical_integration(){
   static double a[6];
   static double pertst[6][3]={
             {1.0, 2.0, 3.0},
-			      {1.0, 4.5, 6.0},
-			      {0.5, 7.333, 9.167},
-			      {0.1667, 10.42, 12.5},
-			      {0.04133, 13.7, 15.98},
-			      {0.008267, 17.15, 1.0}
+            {1.0, 4.5, 6.0},
+            {0.5, 7.333, 9.167},
+            {0.1667, 10.42, 12.5},
+            {0.04133, 13.7, 15.98},
+            {0.008267, 17.15, 1.0}
   };
 
   a[1] = -1.0;
@@ -158,8 +158,8 @@ void Numerical_integration(){
 
         for (i=0;i<number_x;i++){
           y[j2-1][i] += y[j2][i];
-	      }
-	    }
+        }
+      }
     }
 
     for(i=0;i<number_x;i++){
@@ -453,7 +453,7 @@ void Numerical_integration(){
     for(i=0;i<kq;i++){
       for(j=0;j<number_x;j++){
         y[i][j] = save[i][j];
-	    }
+      }
     }
 
     if (nloop != 2){
@@ -471,7 +471,7 @@ void Numerical_integration(){
 
           for(j=0;j<number_x;j++){
             y[i][j] *= r1;
-      	  }
+          }
         }
 
         if ((nloop > 3) && (nq != 1)){

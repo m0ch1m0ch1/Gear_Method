@@ -1,5 +1,5 @@
 /*
- change.c : Function for changed value by force
+  change.c : Function for changed value by force
 */
 
 #include "common.h"

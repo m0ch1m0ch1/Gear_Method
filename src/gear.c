@@ -1,5 +1,5 @@
 /*
- gear.c : Function for Gear's method
+  gear.c : Function for Gear's method
 */
 
 #include "common.h"
@@ -52,7 +52,7 @@ void Gear(){
           Change();
       }else if (y[0][0] >= next_time){
         Output_result();
-	    }
+      }
     }else{
       printf("   You are unlucky !!\n");
       printf("   Calculation stoped.\n");

@@ -1,5 +1,5 @@
 /*
- main.c : Function for main
+  main.c : Function for main
 */
 
 #include <stdio.h>

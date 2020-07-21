@@ -1,5 +1,5 @@
 /*
- malloc.c : Function for allocation and release of memory
+  malloc.c : Function for allocation and release of memory
 */
 
 #include "common.h"
@@ -46,10 +46,10 @@ double **Malloc_double2(int number1, int number2){
     return(0);
   }else{
     for(i=0;i<number1;i++){
-	     if ((*(tmp+i) = (double *)malloc(sizeof(double)*number2)) == NULL){
-         printf("\n Can't allocate memory!!\n");
-         return(0);
-       }
+	    if ((*(tmp+i) = (double *)malloc(sizeof(double)*number2)) == NULL){
+        printf("\n Can't allocate memory!!\n");
+        return(0);
+      }
     }
 
     return(tmp);
@@ -70,8 +70,8 @@ char **Malloc_char(int number){
     for(i=0;i<number;i++){
       if ((*(tmp+i) = (char *)malloc(sizeof(char)*NAME)) == NULL){
         printf("\n Can't allocate memory!!\n");
-	      return(0);
-	    }
+        return(0);
+      }
     }
 
     return(tmp);

@@ -1,5 +1,5 @@
 /*
- output.c : Function for output initial condition and result data
+  output.c : Function for output initial condition and result data
 */
 
 #include "common.h"
@@ -55,7 +55,7 @@ void Output_result(){
     // 一定値以下の値を0とする
     if ( (i != 0) && (ytemp[i] < 1.0E-50)){
       ytemp[i] = 0.0;
-	  }
+    }
 
     fprintf(outfile,"%E",ytemp[i]);
 

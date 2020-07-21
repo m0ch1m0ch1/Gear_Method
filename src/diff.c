@@ -1,5 +1,5 @@
 /*
- diff.c : Function for definition of differential equation
+  diff.c : Function for definition of differential equation
 */
 
 #include "common.h"

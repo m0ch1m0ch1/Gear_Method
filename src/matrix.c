@@ -1,5 +1,5 @@
 /*
- matrix.c : Function for inversion of Jacobian matrix
+  matrix.c : Function for inversion of Jacobian matrix
 */
 
 #include "common.h"
@@ -27,10 +27,10 @@ void Matrix_inversion(double *f, double a0){
 
         for(j=0;j<i;j++){
           sum2 += pw[i][j] * f[j];
-	      }
+        }
 
         f[i] = (f[i] - sum2) / pw[i][i];
-	    }
+      }
 
       break;
     //--------------------------------
@@ -42,14 +42,14 @@ void Matrix_inversion(double *f, double a0){
 
         for(j=0;j<number_x;j++){
           scale[0][j] = df[j];
-	      }
+        }
 
         ysave = y[0][i];
         dlt = convergence;
 
         if (dlt < ysave){
           dlt = ysave;
-	      }
+        }
 
         dlt *= convergence;
         y[0][i] += dlt;
@@ -60,8 +60,8 @@ void Matrix_inversion(double *f, double a0){
 
         for(j=0;j<number_x;j++){
           jacobimat[j][i] = (df[j] - scale[0][j]) / dlt;
-	      }
-	    }
+        }
+      }
     //--------------------------------
 
     // 2の場合
@@ -71,12 +71,12 @@ void Matrix_inversion(double *f, double a0){
       for(i=0;i<number_x;i++){
         for(j=0;j<number_x;j++){
 	         pw[i][j] = jacobimat[i][j] * (a0 * step);
-	      }
-	    }
+        }
+      }
 
       for(i=0;i<number_x;i++){
         pw[i][i] += 1.0;
-	    }
+      }
 
       for(i=0;i<number_x;i++){
         xmax = 0.0;
@@ -96,7 +96,7 @@ void Matrix_inversion(double *f, double a0){
         for(j=0;j<number_x;j++){
           pw[i][j] /= xmax;
         }
-	    }
+      }
 
       for(i=0;i<number_x;i++){
         xmax = 0.0;
