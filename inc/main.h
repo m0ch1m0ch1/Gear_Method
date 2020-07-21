@@ -1,5 +1,5 @@
 /*
- main.h : Header file for main.c
+    main.h : Header file for main.c
 */
 
 /* -------------------------- Function declaration ------------------------- */

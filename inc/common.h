@@ -1,5 +1,5 @@
 /*
- common.h : Header file for except main.c
+    common.h : Header file for except main.c
 */
 
 #include <stdio.h>
